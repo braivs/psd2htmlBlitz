@@ -1,0 +1,48 @@
+include includes/firstBlock
+mixin aboutBlock(varText)
+	.aboutBlock
+		h1= varText
+		p.
+			Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore
+			veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem.
+		p.
+			Sed ut perspiciatis unde omnis iste natus error sit
+			voluptatem accusantium doloremque laudantium, totam
+			rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+			quasi architecto beatae vitae dicta sunt explicabo. Donec ut
+			volutpat metus. Aliquam tortor lorem, fringilla tempor
+			dignissim at, pretium et arcu. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+			doloremque laudantium, totam rem aperiam, eaque ipsa
+			quae ab illo inventore veritatis.
+mixin aboutStaffBlock(varText)
+	.aboutStaffBlock
+		img(src="img/people.jpg", alt="")
+		.blockLeftRight
+			.left
+				h1 JANE DOE
+				h1= varText
+			.right
+				h1 1.306.432.0065
+		p.
+			Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam.
+
+
+<!DOCTYPE html>
+html(lang="en")
+	include includes/head
+	body
+		include includes/header
+		.wrapper
+			main.about
+				+firstBlock("ABOUT US")
+				include includes/separator
+				section.aboutContainer
+					+aboutBlock("OUR  PHILOSOPHY")
+					+aboutBlock("OUR  MISSION")
+					+aboutBlock("OUR HISTORY")
+				include includes/separator
+				section.aboutContainerStaff
+					+aboutStaffBlock("CEO")
+					+aboutStaffBlock("Executive Administrator")
+					+aboutStaffBlock("Realitor")
+		include includes/footer

@@ -1,0 +1,53 @@
+include includes/firstBlock
+mixin postBody(varImg,varH1)
+	.darkned
+		img(src=varImg, alt="")
+		img(src="img/projects/bgForHover.png", alt="")
+		img(src="img/projects/magnify_glass.png", alt="")
+	h1= varH1
+	p.
+		Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium antium.
+
+<!DOCTYPE html>
+html(lang="en")
+	include includes/head
+	body
+		include includes/header
+		.wrapper
+			main.projects
+				section.leftBlock
+					+firstBlock("PROJECTS")
+					include includes/separator
+					.toggles
+						button#all ALL
+						button#web WEB
+						button#print PRINT
+						button#art ART
+						button#photoshop PHOTOSHOP
+						button#development DEVELOPMENT
+					.posts
+						.post.web
+							+postBody("img/projects/img_1.jpg","vallarta  brochure")
+						.post.web
+							+postBody("img/projects/img_1.jpg","vallarta  brochure")
+						.post.print
+							+postBody("img/projects/img_2.jpg","wedding  card")
+						.post.print
+							+postBody("img/projects/img_2.jpg","wedding  card")
+						.post.print
+							+postBody("img/projects/img_2.jpg","wedding  card")
+						.post.art
+							+postBody("img/projects/img_3.jpg","website  design")
+						.post.art
+							+postBody("img/projects/img_3.jpg","website  design")
+						.post.photoshop
+							+postBody("img/projects/img_4.jpg","jesus  wallpaper")
+						.post.photoshop
+							+postBody("img/projects/img_5.jpg","vallarta  brochure")
+						.post.development
+							+postBody("img/projects/img_6.jpg","business  cards")
+						.post.development
+							+postBody("img/projects/img_6.jpg","business  cards")
+					include includes/clickerImgs
+				include includes/rightBlock
+		include includes/footer
