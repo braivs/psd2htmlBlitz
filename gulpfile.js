@@ -31,7 +31,7 @@ function watch () {
         }
     })
     gulp.watch('./src/sass/**/*.sass', style);
-    gulp.watch('./src/*.pug', pugCompile);
+    gulp.watch('./src/**/*.pug', pugCompile);
     // gulp.watch('./docs/*.html').on('change', browserSync.reload); //for clean html only
 }
 

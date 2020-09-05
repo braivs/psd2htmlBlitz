@@ -17,7 +17,7 @@ $(function(){
 		get_current.show(500);
 	});
 
-	$('#showall').click(function(){
+	$('#all').click(function(){
 		$('.post').show(500);
 	});
 });
