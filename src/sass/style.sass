@@ -48,9 +48,12 @@ header, main, main.contact, footer
 	flex-shrink: 0
 
 .wrapperHeader
-	margin: 0 0 0 233px
+	display: flex
+	justify-content: center
 .wrapper
-	margin: 50px 0 0 233px
+	display: flex
+	flex-direction: column
+	align-items: center
 
 body
 	font-family: 'Bebas Neue'
@@ -76,7 +79,7 @@ header
 				font-family: 'Pacifico'
 				font-size: 42px
 		nav
-			margin: 0 0 0 29%
+			margin: 0 0 0 263px
 			.topnav
 				display: flex
 				.menuGroup
@@ -422,11 +425,11 @@ footer
 	.footer-container
 		display: flex
 		height: 70px
-		justify-self: center
+		justify-content: center
 		align-items: center
 		background: #f8f8f8
 		margin: -3px 0 0 0
-		padding-left: 230px
+		// padding-left: 230px
 		.footer-left,.footer-right
 			p
 				font-size: 13px
