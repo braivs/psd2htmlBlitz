@@ -27,22 +27,20 @@ mixin aboutStaffBlock(varText)
 			Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laud antium, totam rem aperiam.
 
 
-<!DOCTYPE html>
-html(lang="en")
-	include includes/head
-	body
-		include includes/header
-		.wrapper
-			main.about
-				+firstBlock("ABOUT US")
-				include includes/separator
-				section.aboutContainer
-					+aboutBlock("OUR  PHILOSOPHY")
-					+aboutBlock("OUR  MISSION")
-					+aboutBlock("OUR HISTORY")
-				include includes/separator
-				section.aboutContainerStaff
-					+aboutStaffBlock("CEO")
-					+aboutStaffBlock("Executive Administrator")
-					+aboutStaffBlock("Realitor")
-		include includes/footer
+include includes/head
+body
+	include includes/header
+	.wrapper
+		main.about
+			+firstBlock("ABOUT US")
+			include includes/separator
+			section.aboutContainer
+				+aboutBlock("OUR  PHILOSOPHY")
+				+aboutBlock("OUR  MISSION")
+				+aboutBlock("OUR HISTORY")
+			include includes/separator
+			section.aboutContainerStaff
+				+aboutStaffBlock("CEO")
+				+aboutStaffBlock("Executive Administrator")
+				+aboutStaffBlock("Realitor")
+	include includes/footer

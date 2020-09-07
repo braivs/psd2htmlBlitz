@@ -54,6 +54,7 @@ header, main, main.contact, footer
 	display: flex
 	flex-direction: column
 	align-items: center
+	// border: 3px solid blue
 
 body
 	font-family: 'Bebas Neue'
@@ -72,6 +73,7 @@ header
 		background-color: #ebebeb
 	section.headerContainer
 		display: flex
+		margin-bottom: 50px
 		.header__logo
 			margin: 20px 0 0 2px
 			p
@@ -103,13 +105,15 @@ header
 				.menuGroup:hover .triangleDown
 					visibility: visible
 main
+	// padding-right: 50px
 	section.mainImgContainer
 		display: flex
 		margin: 35px 0 0 0
 		position: relative
-		width: 940px
+		// width: 940px
 		img
 			width: 100%
+			// margin-right: 50px
 		.left-block
 			position: absolute
 			bottom: 0
@@ -184,6 +188,7 @@ main
 			@include button
 	section.works-separator
 		display: flex
+		justify-content: center
 		margin: 65px 0px 0 0
 		img
 			width: 380px
@@ -447,6 +452,8 @@ footer
 		section.headerContainer
 			nav
 				margin: 0 0 0 10%
+	main
+		padding-right: 50px
 	footer
 		width: 100%
 		.footer-container

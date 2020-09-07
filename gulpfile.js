@@ -6,33 +6,31 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 
 function style () {
-    return gulp.src('./src/sass/**/*.sass')
+    return gulp.src('src/sass/**/*.sass')
             .pipe(sourcemaps.init())
             .pipe(sass().on('error', sass.logError))
             .pipe(autoprefixer())
             .pipe(sourcemaps.write('./'))
-            .pipe(gulp.dest('./docs/css'))
+            .pipe(gulp.dest('docs/css'))
             .pipe(browserSync.stream())
 }
 
 function pugCompile () {
-    return gulp.src('./src/*.pug')
+    return gulp.src('src/*.pug')
     .pipe(pug({
         pretty: true
     }))
-    .pipe(gulp.dest('./docs/'))
+    .pipe(gulp.dest('docs/'))
     .pipe(browserSync.stream())
 }
 
 function watch () {
     browserSync.init({
-        server: {
-            baseDir: './docs'
-        }
+        server: "./docs"
     })
-    gulp.watch('./src/sass/**/*.sass', style);
-    gulp.watch('./src/**/*.pug', pugCompile);
-    // gulp.watch('./docs/*.html').on('change', browserSync.reload); //for clean html only
+    gulp.watch('src/sass/**/*.sass', style);
+    gulp.watch('src/*.pug', pugCompile);
+    // gulp.watch('docs/*.html').on('change', browserSync.reload); //for clean html only
 }
 
 gulp.task('default', function () {
