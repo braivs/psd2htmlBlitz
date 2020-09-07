@@ -17,14 +17,14 @@ mixin blockBlog(varH1,varImg)
 				p.
 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis  ...
 
-<!DOCTYPE html>
-html(lang="en")
+include includes/head
+body
 	include includes/head
 	include includes/header
 	.wrapper
 		main.projects
 			section.leftBlock
-				+firstBlock("BLOG333")
+				+firstBlock("BLOG")
 				include includes/separator
 				+blockBlog("top  10  web  design  blogs","img/blog/blog1.jpg")
 				include includes/separator
