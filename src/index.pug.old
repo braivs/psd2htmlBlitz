@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+//- include includes/button
+//- mixin projectsContainer(varImg,varImgAlt,varH1,varButtonText,varButtonLink)
+//- 	.projects-container
+//- 		.projects-top
+//- 			img(src=varImg alt=varImgAlt)
+//- 			h1= varH1
+//- 		block
+//- 		.projects-bottom
+//- 			+button(varButtonText,varButtonLink)
+//- mixin worksContainer(varImg,varImgAlt,varH1,varButtonText,varButtonLink)
+//- 	.works-container
+//- 		.work-top
+//- 			img(src=varImg alt=varImgAlt)
+//- 			h1= varH1
+//- 			block
+//- 		.works-bottom
+//- 			+button(varButtonText,varButtonLink)
+
+
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+    	meta(name="viewport", content="width=device-width")
+		link(rel="stylesheet", href="css/style.css")
+		link(href!="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap", rel="stylesheet")
+		link(href!="https://fonts.googleapis.com/css?family=Pacifico&display=swap", rel="stylesheet")
+		title Blitz
+	body.body
+		//- include includes/header
+		//- main
+		//- 	.wrapper
+		//- 		section.mainImgContainer
+		//- 			img(src="img/jesus.jpg")
+		//- 			.left-block
+		//- 				p This Months
+		//- 				p FEATURED WORK
+		//- 			.right-block
+		//- 				div
+		//- 				div
+		//- 				div
+		//- 				div
+		//- 			.triangle-up
+		//- 		section.description
+		//- 			h1 JESUS TYPOGRAPHY WALLPAPER
+		//- 			p.
+		//- 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non diam et lacus pulvinar venenatis et vestibulum velit. Pellentesque interdum faucibus dui hendrerit ultrices. Aliquam erat volutpat. Duis commodo turpis id diam pulvinar hendrerit.
+		//- 		section.projects
+		//- 			+projectsContainer(
+		//- 				"img/magnify_glass.png",
+		//- 				"magnify_glass",
+		//- 				"Check Out OUR latest PROJECTS",
+		//- 				"FIND OUT MORE",
+		//- 				"#")
+		//- 				p.
+		//- 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+		//- 			+projectsContainer(
+		//- 				"img/star.png",
+		//- 				"star",
+		//- 				"Guarantee 5 STar Quality Work",
+		//- 				"FIND OUT MORE",
+		//- 				"#")
+		//- 				p.
+		//- 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+		//- 			+projectsContainer(
+		//- 				"img/dialog.png",
+		//- 				"dialog",
+		//- 				"Stay connected by reading the blog",
+		//- 				"FIND OUT MORE",
+		//- 				"#")
+		//- 				p.
+		//- 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+		//- 		section.works-separator
+		//- 			img(src="img/works-separator-background.png" alt="")
+		//- 			h1 My latest work
+		//- 			img(src="img/works-separator-background.png" alt="")
+		//- 		section.works
+		//- 			+worksContainer(
+		//- 				"img/work1.jpg",
+		//- 				"work1",
+		//- 				"Vallarta Brochure",
+		//- 				"VIEW PROJECTS",
+		//- 				"#")
+		//- 				p.
+		//- 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
+		//- 			+worksContainer(
+		//- 				"img/work2.jpg",
+		//- 				"work2",
+		//- 				"Photoshop tutorial",
+		//- 				"VIEW PROJECTS",
+		//- 				"#")
+		//- 				p.
+		//- 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
+		//- 			+worksContainer(
+		//- 				"img/work3.jpg",
+		//- 				"work3",
+		//- 				"Business cards",
+		//- 				"VIEW PROJECTS",
+		//- 				"#")
+		//- 				p.
+		//- 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
+		//- 			+worksContainer(
+		//- 				"img/work4.jpg",
+		//- 				"work4",
+		//- 				"Website design",
+		//- 				"VIEW PROJECTS",
+		//- 				"#")
+		//- 				p.
+		//- 					Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum.
+		//- include includes/footer
