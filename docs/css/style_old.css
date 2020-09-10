@@ -1,0 +1,585 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/Helvetica55Roman_22439.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.footer2Bottom {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+
+.wrapperHeader {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.wrapper {
+  max-width: 940px; }
+
+body {
+  font-family: 'Bebas Neue';
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  body a {
+    text-decoration: none; }
+  body h1 {
+    font-weight: 400; }
+  body p {
+    font-family: "Helvetica Neue";
+    font-size: 12px; }
+
+.topLine {
+  height: 7px;
+  width: 100%;
+  background-color: #e2e2e2; }
+
+header {
+  width: 100%; }
+  header section.headerContainer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    header section.headerContainer .header__logo p {
+      color: #474747;
+      font-family: 'Pacifico';
+      font-size: 42px; }
+    header section.headerContainer nav .topnav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      header section.headerContainer nav .topnav .menuGroup {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        header section.headerContainer nav .topnav .menuGroup.icon {
+          display: none; }
+        header section.headerContainer nav .topnav .menuGroup .triangleDown {
+          border: 10px solid transparent;
+          border-top: 10px solid #ebebeb;
+          margin: 0 auto 20px;
+          visibility: hidden; }
+        header section.headerContainer nav .topnav .menuGroup a {
+          color: #bfbfbf;
+          font-size: 15px;
+          white-space: nowrap; }
+          header section.headerContainer nav .topnav .menuGroup a:last-child {
+            color: #474747;
+            font-size: 26px; }
+      header section.headerContainer nav .topnav .menuGroup:not(:nth-of-type(5)) {
+        margin-right: 55px; }
+      header section.headerContainer nav .topnav .menuGroup:hover .triangleDown {
+        visibility: visible; }
+
+main section.mainImgContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  main section.mainImgContainer img {
+    width: 100%; }
+  main section.mainImgContainer .left-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: #444444;
+    width: 217px;
+    height: 72px;
+    padding: 10px 17px; }
+    main section.mainImgContainer .left-block p {
+      font-family: 'Bebas Neue';
+      text-transform: uppercase; }
+      main section.mainImgContainer .left-block p:first-child {
+        color: #9a9a9a;
+        font-size: 17px; }
+      main section.mainImgContainer .left-block p:last-child {
+        color: #ffffff;
+        font-size: 34px; }
+  main section.mainImgContainer .right-block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 15px 12px 0;
+    z-index: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: flex-end;
+        -ms-flex-direction: flex-end;
+            flex-direction: flex-end; }
+    main section.mainImgContainer .right-block div {
+      width: 23px;
+      height: 5px;
+      background-color: #ffffff;
+      margin-left: 7px; }
+      main section.mainImgContainer .right-block div:first-child {
+        background-color: #444444; }
+  main section.mainImgContainer .triangle-up {
+    position: absolute;
+    border: 12px solid transparent;
+    border-bottom: 12px solid #f7f7f7;
+    bottom: 0;
+    left: 50%; }
+
+main section.description {
+  height: auto;
+  background-color: #f7f7f7;
+  padding: 18px 50px 15px 0px; }
+  main section.description h1 {
+    font-size: 20px;
+    line-height: 21px;
+    padding: 0 0 10px 16px; }
+  main section.description p {
+    padding: 0 0 15px 15px;
+    font-size: 14px; }
+
+main section.projects {
+  margin: 66px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 45px;
+     -moz-column-gap: 45px;
+          column-gap: 45px; }
+  main section.projects .projects-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main section.projects .projects-top h1 {
+      font-size: 25px;
+      line-height: 25px; }
+    main section.projects .projects-top img {
+      margin-right: 33px; }
+  main section.projects p {
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 30px; }
+  main section.projects .projects-bottom {
+    margin-top: 22px; }
+    main section.projects .projects-bottom .buttonContainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      main section.projects .projects-bottom .buttonContainer a {
+        color: black; }
+        main section.projects .projects-bottom .buttonContainer a img {
+          margin-right: 10px;
+          width: 17px;
+          height: 9px; }
+      main section.projects .projects-bottom .buttonContainer a h1 {
+        font-size: 14px; }
+
+main section.works-separator {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 65px 0px 0 0;
+  overflow: hidden; }
+  main section.works-separator img {
+    height: 29px; }
+  main section.works-separator h1 {
+    font-size: 22px;
+    padding: 0 30px 0 20px;
+    white-space: nowrap; }
+
+main section.works {
+  display: grid;
+  margin: 52px 0 0 0;
+  grid-template-columns: repeat(4, auto);
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px; }
+  main section.works .works-container .work-top h1 {
+    margin: 10px 0 0 0;
+    font-size: 18px; }
+  main section.works .works-container .work-top p {
+    margin: 10px 0 0 0;
+    line-height: 18px; }
+  main section.works .works-container .works-bottom {
+    margin-top: 25px; }
+    main section.works .works-container .works-bottom .buttonContainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      main section.works .works-container .works-bottom .buttonContainer a {
+        color: black; }
+        main section.works .works-container .works-bottom .buttonContainer a img {
+          margin-right: 10px;
+          width: 17px;
+          height: 9px; }
+      main section.works .works-container .works-bottom .buttonContainer a h1 {
+        font-size: 14px; }
+
+main.about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 100%;
+  max-width: 100%; }
+  main.about .firstBlock h1 {
+    font-size: 30px; }
+  main.about .firstBlock p {
+    font-size: 14px;
+    line-height: 20px; }
+  main.about section.separator img {
+    width: 658px;
+    height: 5px; }
+  main.about section.aboutContainer {
+    max-width: 100%;
+    display: grid;
+    margin: 30px 0 0 0;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px; }
+    main.about section.aboutContainer .aboutBlock {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      main.about section.aboutContainer .aboutBlock h1 {
+        font-size: 22px; }
+      main.about section.aboutContainer .aboutBlock p {
+        font-size: 12px;
+        margin-top: 22px;
+        line-height: 19px; }
+        main.about section.aboutContainer .aboutBlock p:nth-of-type(1) {
+          color: #9e9e9e; }
+  main.about section.aboutContainerStaff {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px;
+    margin: 100px 0 0 0; }
+    main.about section.aboutContainerStaff .aboutStaffBlock {
+      border: 0.5px solid #f8f8f8;
+      padding-bottom: 25px; }
+      main.about section.aboutContainerStaff .aboutStaffBlock .blockLeftRight {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        padding: 5px 0 0 15px; }
+        main.about section.aboutContainerStaff .aboutStaffBlock .blockLeftRight .left h1:nth-of-type(2) {
+          color: #9e9e9e;
+          font-size: 13px; }
+        main.about section.aboutContainerStaff .aboutStaffBlock .blockLeftRight .right {
+          margin-left: auto;
+          font-size: 10px;
+          padding: 10px 20px 0 0; }
+      main.about section.aboutContainerStaff .aboutStaffBlock p {
+        padding: 15px 0 0 20px;
+        line-height: 17px;
+        font-size: 14px; }
+
+main.projects, main.blog, main.contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  main.projects section.leftBlock, main.blog section.leftBlock, main.contact section.leftBlock {
+    max-width: 100%; }
+    main.projects section.leftBlock .firstBlock h1, main.blog section.leftBlock .firstBlock h1, main.contact section.leftBlock .firstBlock h1 {
+      font-size: 30px; }
+    main.projects section.leftBlock .firstBlock p, main.blog section.leftBlock .firstBlock p, main.contact section.leftBlock .firstBlock p {
+      font-size: 14px;
+      line-height: 20px; }
+    main.projects section.leftBlock section.separator img, main.blog section.leftBlock section.separator img, main.contact section.leftBlock section.separator img {
+      width: 658px;
+      height: 5px; }
+    main.projects section.leftBlock .toggles, main.blog section.leftBlock .toggles, main.contact section.leftBlock .toggles {
+      margin: 14px 0 0 -2px; }
+      main.projects section.leftBlock .toggles span, main.blog section.leftBlock .toggles span, main.contact section.leftBlock .toggles span {
+        font-size: 17px;
+        margin-right: 10px; }
+        main.projects section.leftBlock .toggles span:nth-of-type(1), main.blog section.leftBlock .toggles span:nth-of-type(1), main.contact section.leftBlock .toggles span:nth-of-type(1) {
+          color: #9e9e9e; }
+      main.projects section.leftBlock .toggles button, main.blog section.leftBlock .toggles button, main.contact section.leftBlock .toggles button {
+        border: none;
+        background: none;
+        color: #424146;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 20px 5px; }
+        main.projects section.leftBlock .toggles button:after, main.blog section.leftBlock .toggles button:after, main.contact section.leftBlock .toggles button:after {
+          content: ' |'; }
+        main.projects section.leftBlock .toggles button:last-child:after, main.blog section.leftBlock .toggles button:last-child:after, main.contact section.leftBlock .toggles button:last-child:after {
+          content: ''; }
+    main.projects section.leftBlock .posts, main.blog section.leftBlock .posts, main.contact section.leftBlock .posts {
+      display: grid;
+      margin: 25px 0 0 -1px;
+      grid-template-columns: repeat(3, 209px);
+      grid-gap: 18px; }
+      main.projects section.leftBlock .posts .post, main.blog section.leftBlock .posts .post, main.contact section.leftBlock .posts .post {
+        border: 1px solid #f8f8f8;
+        max-width: 209px;
+        padding-bottom: 25px; }
+        main.projects section.leftBlock .posts .post:hover .darkned::before, main.projects section.leftBlock .posts .post:hover .darkned img:nth-of-type(2), main.projects section.leftBlock .posts .post:hover .darkned img:nth-of-type(3), main.blog section.leftBlock .posts .post:hover .darkned::before, main.blog section.leftBlock .posts .post:hover .darkned img:nth-of-type(2), main.blog section.leftBlock .posts .post:hover .darkned img:nth-of-type(3), main.contact section.leftBlock .posts .post:hover .darkned::before, main.contact section.leftBlock .posts .post:hover .darkned img:nth-of-type(2), main.contact section.leftBlock .posts .post:hover .darkned img:nth-of-type(3) {
+          display: inherit; }
+        main.projects section.leftBlock .posts .post .darkned, main.blog section.leftBlock .posts .post .darkned, main.contact section.leftBlock .posts .post .darkned {
+          position: relative; }
+          main.projects section.leftBlock .posts .post .darkned img:nth-of-type(1), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(1), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(1) {
+            position: relative; }
+          main.projects section.leftBlock .posts .post .darkned img:nth-of-type(2), main.projects section.leftBlock .posts .post .darkned img:nth-of-type(3), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(2), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(3), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(2), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(3) {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+            z-index: 2; }
+        main.projects section.leftBlock .posts .post .darkned::before, main.blog section.leftBlock .posts .post .darkned::before, main.contact section.leftBlock .posts .post .darkned::before {
+          display: none;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: #000000;
+          opacity: 0.75;
+          z-index: 1; }
+        main.projects section.leftBlock .posts .post h1, main.blog section.leftBlock .posts .post h1, main.contact section.leftBlock .posts .post h1 {
+          padding: 6px 0 0 15px;
+          font-size: 20px; }
+          main.projects section.leftBlock .posts .post h1:nth-of-type(2), main.blog section.leftBlock .posts .post h1:nth-of-type(2), main.contact section.leftBlock .posts .post h1:nth-of-type(2) {
+            margin: -7px 0 0 0;
+            color: #9e9e9e;
+            font-size: 15px; }
+        main.projects section.leftBlock .posts .post p, main.blog section.leftBlock .posts .post p, main.contact section.leftBlock .posts .post p {
+          margin: 18px 0 0 14px;
+          max-width: 179px;
+          line-height: 15px; }
+    main.projects section.leftBlock .blockBlog, main.blog section.leftBlock .blockBlog, main.contact section.leftBlock .blockBlog {
+      margin: 35px 0 0 0; }
+      main.projects section.leftBlock .blockBlog h1, main.blog section.leftBlock .blockBlog h1, main.contact section.leftBlock .blockBlog h1 {
+        font-size: 20px; }
+      main.projects section.leftBlock .blockBlog img, main.blog section.leftBlock .blockBlog img, main.contact section.leftBlock .blockBlog img {
+        margin: 16px 0 0 0;
+        max-width: 100%;
+        object-fit: cover; }
+      main.projects section.leftBlock .blockBlog .blockBlogContainer, main.blog section.leftBlock .blockBlog .blockBlogContainer, main.contact section.leftBlock .blockBlog .blockBlogContainer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 20px 0 56px 0; }
+        main.projects section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1, main.blog section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1, main.contact section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1 {
+          font-size: 15px; }
+          main.projects section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1:nth-of-type(2), main.blog section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1:nth-of-type(2), main.contact section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1:nth-of-type(2) {
+            margin: 10px 0 0 0; }
+          main.projects section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1:nth-of-type(3), main.blog section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1:nth-of-type(3), main.contact section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft h1:nth-of-type(3) {
+            margin: 15px 0 0 0; }
+        main.projects section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft p, main.blog section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft p, main.contact section.leftBlock .blockBlog .blockBlogContainer .blockBlogLeft p {
+          margin: 5px 0 0 0;
+          white-space: nowrap; }
+        main.projects section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight, main.blog section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight, main.contact section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight {
+          max-width: 500px;
+          margin: 5px 0 0 70px; }
+          main.projects section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight p, main.blog section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight p, main.contact section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight p {
+            font-size: 12px;
+            line-height: 18px; }
+            main.projects section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight p:nth-of-type(2), main.blog section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight p:nth-of-type(2), main.contact section.leftBlock .blockBlog .blockBlogContainer .blockBlogRight p:nth-of-type(2) {
+              margin: 20px 0 0 0; }
+    main.projects section.leftBlock .contactText p, main.blog section.leftBlock .contactText p, main.contact section.leftBlock .contactText p {
+      max-width: 657px; }
+      main.projects section.leftBlock .contactText p:nth-of-type(1), main.blog section.leftBlock .contactText p:nth-of-type(1), main.contact section.leftBlock .contactText p:nth-of-type(1) {
+        margin: 30px 0 0 0; }
+      main.projects section.leftBlock .contactText p:nth-of-type(2), main.blog section.leftBlock .contactText p:nth-of-type(2), main.contact section.leftBlock .contactText p:nth-of-type(2) {
+        margin: 20px 0 0 0; }
+    main.projects section.leftBlock .contactForm, main.blog section.leftBlock .contactForm, main.contact section.leftBlock .contactForm {
+      margin: 44px 0 0 0; }
+      main.projects section.leftBlock .contactForm p, main.blog section.leftBlock .contactForm p, main.contact section.leftBlock .contactForm p {
+        margin: 0 0 12px 0; }
+        main.projects section.leftBlock .contactForm p input, main.projects section.leftBlock .contactForm p textarea, main.blog section.leftBlock .contactForm p input, main.blog section.leftBlock .contactForm p textarea, main.contact section.leftBlock .contactForm p input, main.contact section.leftBlock .contactForm p textarea {
+          border: 1px solid #eeeeee;
+          background-color: #fafafa;
+          font-family: 'Bebas Neue';
+          padding: 0 0 0 13px;
+          font-size: 14px; }
+          main.projects section.leftBlock .contactForm p input::-webkit-input-placeholder, main.projects section.leftBlock .contactForm p textarea::-webkit-input-placeholder, main.blog section.leftBlock .contactForm p input::-webkit-input-placeholder, main.blog section.leftBlock .contactForm p textarea::-webkit-input-placeholder, main.contact section.leftBlock .contactForm p input::-webkit-input-placeholder, main.contact section.leftBlock .contactForm p textarea::-webkit-input-placeholder {
+            color: #c6c6c6; }
+          main.projects section.leftBlock .contactForm p input::-moz-placeholder, main.projects section.leftBlock .contactForm p textarea::-moz-placeholder, main.blog section.leftBlock .contactForm p input::-moz-placeholder, main.blog section.leftBlock .contactForm p textarea::-moz-placeholder, main.contact section.leftBlock .contactForm p input::-moz-placeholder, main.contact section.leftBlock .contactForm p textarea::-moz-placeholder {
+            color: #c6c6c6; }
+          main.projects section.leftBlock .contactForm p input:-ms-input-placeholder, main.projects section.leftBlock .contactForm p textarea:-ms-input-placeholder, main.blog section.leftBlock .contactForm p input:-ms-input-placeholder, main.blog section.leftBlock .contactForm p textarea:-ms-input-placeholder, main.contact section.leftBlock .contactForm p input:-ms-input-placeholder, main.contact section.leftBlock .contactForm p textarea:-ms-input-placeholder {
+            color: #c6c6c6; }
+          main.projects section.leftBlock .contactForm p input::-ms-input-placeholder, main.projects section.leftBlock .contactForm p textarea::-ms-input-placeholder, main.blog section.leftBlock .contactForm p input::-ms-input-placeholder, main.blog section.leftBlock .contactForm p textarea::-ms-input-placeholder, main.contact section.leftBlock .contactForm p input::-ms-input-placeholder, main.contact section.leftBlock .contactForm p textarea::-ms-input-placeholder {
+            color: #c6c6c6; }
+          main.projects section.leftBlock .contactForm p input::placeholder, main.projects section.leftBlock .contactForm p textarea::placeholder, main.blog section.leftBlock .contactForm p input::placeholder, main.blog section.leftBlock .contactForm p textarea::placeholder, main.contact section.leftBlock .contactForm p input::placeholder, main.contact section.leftBlock .contactForm p textarea::placeholder {
+            color: #c6c6c6; }
+        main.projects section.leftBlock .contactForm p input, main.blog section.leftBlock .contactForm p input, main.contact section.leftBlock .contactForm p input {
+          width: 216px;
+          height: 33px;
+          font-weight: 400;
+          line-height: 28px; }
+        main.projects section.leftBlock .contactForm p textarea, main.blog section.leftBlock .contactForm p textarea, main.contact section.leftBlock .contactForm p textarea {
+          width: 492px;
+          height: 203px;
+          padding: 10px 0 0 13px;
+          resize: none; }
+      main.projects section.leftBlock .contactForm .buttonContainer, main.blog section.leftBlock .contactForm .buttonContainer, main.contact section.leftBlock .contactForm .buttonContainer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        main.projects section.leftBlock .contactForm .buttonContainer a, main.blog section.leftBlock .contactForm .buttonContainer a, main.contact section.leftBlock .contactForm .buttonContainer a {
+          color: black; }
+          main.projects section.leftBlock .contactForm .buttonContainer a img, main.blog section.leftBlock .contactForm .buttonContainer a img, main.contact section.leftBlock .contactForm .buttonContainer a img {
+            margin-right: 10px;
+            width: 17px;
+            height: 9px; }
+        main.projects section.leftBlock .contactForm .buttonContainer a h1, main.blog section.leftBlock .contactForm .buttonContainer a h1, main.contact section.leftBlock .contactForm .buttonContainer a h1 {
+          font-size: 14px; }
+    main.projects section.leftBlock section.clickerImgs, main.blog section.leftBlock section.clickerImgs, main.contact section.leftBlock section.clickerImgs {
+      margin-top: 74px; }
+      main.projects section.leftBlock section.clickerImgs img, main.blog section.leftBlock section.clickerImgs img, main.contact section.leftBlock section.clickerImgs img {
+        margin-right: 7px; }
+  main.projects section.rightBlock, main.blog section.rightBlock, main.contact section.rightBlock {
+    margin: 58px 0 0 55px;
+    max-width: 218px; }
+    main.projects section.rightBlock h1, main.blog section.rightBlock h1, main.contact section.rightBlock h1 {
+      font-size: 15px; }
+      main.projects section.rightBlock h1:nth-of-type(2), main.blog section.rightBlock h1:nth-of-type(2), main.contact section.rightBlock h1:nth-of-type(2) {
+        margin-top: 20px; }
+      main.projects section.rightBlock h1:nth-of-type(3), main.blog section.rightBlock h1:nth-of-type(3), main.contact section.rightBlock h1:nth-of-type(3) {
+        margin: 21px 0 0 0; }
+    main.projects section.rightBlock p, main.blog section.rightBlock p, main.contact section.rightBlock p {
+      margin-top: 17px;
+      font-size: 12px; }
+      main.projects section.rightBlock p:nth-of-type(2), main.blog section.rightBlock p:nth-of-type(2), main.contact section.rightBlock p:nth-of-type(2) {
+        margin: 36px 0 0 0; }
+      main.projects section.rightBlock p:nth-of-type(4), main.blog section.rightBlock p:nth-of-type(4), main.contact section.rightBlock p:nth-of-type(4) {
+        margin: 0 0 0 0; }
+      main.projects section.rightBlock p:nth-of-type(5), main.blog section.rightBlock p:nth-of-type(5), main.contact section.rightBlock p:nth-of-type(5) {
+        margin: 23px 0 0 0; }
+      main.projects section.rightBlock p:nth-of-type(6), main.blog section.rightBlock p:nth-of-type(6), main.contact section.rightBlock p:nth-of-type(6) {
+        margin: 5px 0 0 0; }
+      main.projects section.rightBlock p span, main.blog section.rightBlock p span, main.contact section.rightBlock p span {
+        color: #9e9e9e; }
+
+footer {
+  width: 100%; }
+  footer .footer-line {
+    width: 100%;
+    background: url("../img/footer_Line.png");
+    background-repeat: repeat-x;
+    height: 7px;
+    margin-top: 65px;
+    z-index: 1; }
+  footer .footer-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #f8f8f8;
+    margin: -3px 0 0 0; }
+    footer .footer-container .footer-left p, footer .footer-container .footer-right p {
+      font-size: 13px;
+      white-space: nowrap; }
+    footer .footer-container .footer-right p {
+      margin-left: 438px; }
+
+/*# sourceMappingURL=style_old.css.map */
