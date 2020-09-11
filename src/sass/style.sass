@@ -1,3 +1,16 @@
+@mixin button
+    .buttonContainer
+        display: flex
+        align-items: center
+        a
+            color: black
+            img
+                margin-right: 10px
+                width: 17px
+                height: 9px
+        a
+            h1
+                font-size: 14px
 *
     margin: 0
     padding: 0
@@ -118,4 +131,56 @@ main
             line-height: 17px
             margin-top: 30px
         .projects-bottom
-            margin-top: 22px
+            margin-top: 10px
+            @include button
+    section.works-separator
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 65px 0px 0 0
+        overflow: hidden
+        img
+            height: 29px
+        h1
+            font-size: 22px
+            padding: 0 30px 0 20px
+            white-space: nowrap
+    section.works
+        display: grid
+        margin: 52px 0 0 0
+        grid-template-columns: repeat(4, auto)
+        column-gap: 20px
+        .worksContainer
+            .work-top
+                h1
+                    margin: 10px 0 0 0
+                    font-size: 18px
+                p
+                    margin: 10px 0 0 0
+                    line-height: 18px
+            .works-bottom
+                margin-top: 10px
+                @include button
+footer
+    width: 100%
+    .footer-line
+        width: 100%
+        background: url("../img/footer_Line.png")
+        background-repeat: repeat-x
+        height: 7px
+        margin-top: 65px
+        z-index: 1
+    .footer-container
+        display: flex
+        height: 70px
+        justify-content: center
+        align-items: center
+        background: #f8f8f8
+        margin: -3px 0 0 0
+        .footer-left,.footer-right
+            p
+                font-size: 13px
+                white-space: nowrap
+        .footer-right
+            p
+                margin-left: 438px
