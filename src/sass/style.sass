@@ -29,8 +29,8 @@ $pSize: 14px
 @font-face
     font-family: 'Helvetica Neue'
     src: url('../fonts/Helvetica65Medium22443.woff') format('woff')
-    // font-weight: normal
-    // font-style: normal
+    font-weight: normal
+    font-style: normal
 html 
     // height: 100%
 body
@@ -90,35 +90,54 @@ header
                 visibility: visible
 main
     flex: 1 0 auto
-    section.mainImgContainer
-        display: flex
+    section.swiper-container
         position: relative
-        img
-            width: 100%
-        .left-block
-            position: absolute
-            bottom: 0
-            left: 0
-            color: white
-            background-color: #444444
-            width: 217px
-            height: 72px
-            padding: 10px 17px
-            p
-                font-family: 'Bebas Neue'
-                text-transform: uppercase
-                &:first-child
-                    color: #9a9a9a
-                    font-size: 17px
-                &:last-child
-                    color: #ffffff
-                    font-size: 34px
-        .triangle-up
-            position: absolute
-            border: 12px solid transparent
-            border-bottom: 12px solid #f7f7f7
-            bottom: 0
-            left: 50%
+        .swiper-wrapper
+            .swiper-slide
+                display: flex
+                position: relative
+                img
+                    width: 100%
+                .left-block
+                    position: absolute
+                    bottom: 0
+                    left: 0
+                    color: white
+                    background-color: #444444
+                    width: 217px
+                    height: 72px
+                    padding: 10px 17px
+                    p
+                        font-family: 'Bebas Neue'
+                        text-transform: uppercase
+                        &:first-child
+                            color: #9a9a9a
+                            font-size: 17px
+                        &:last-child
+                            color: #ffffff
+                            font-size: 34px
+                .triangle-up
+                    position: absolute
+                    border: 12px solid transparent
+                    border-bottom: 12px solid #f7f7f7
+                    bottom: 0
+                    left: 50%
+                    transform: translateX(-50%)
+        .swiper-pagination
+            display: flex
+            justify-content: flex-end
+            padding-right: 15px
+            padding-bottom: 5px
+            &-bullet
+                border-radius: 0
+                opacity: 1
+                background-color: #fff
+                width: 23px
+                height: 5px
+            &-bullet-active
+                background-color: #444444
+                // width: 23px
+                // height: 5px
     section.description
         background-color: #f7f7f7
         padding-top: 10px
@@ -415,3 +434,4 @@ footer
         .footer-right
             p
                 margin-left: 438px
+@import media

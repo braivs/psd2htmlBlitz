@@ -4,20 +4,42 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet", href="css/style.css")
         link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/swiper-bundle.min.css")
+        link(rel="stylesheet", href="css/style.css")
         link(href!="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap", rel="stylesheet")
         link(href!="https://fonts.googleapis.com/css?family=Pacifico&display=swap", rel="stylesheet")
         title Blitz
     body
         include includes/header
         main.wrapper
-            section.mainImgContainer
-                img(src="img/jesus.jpg")
-                .left-block
-                    p This Months
-                    p FEATURED WORK
-                .triangle-up
+            section.swiper-container
+                .swiper-wrapper
+                    .swiper-slide
+                        img(src="img/jesus.jpg")
+                        .left-block
+                            p This Months
+                            p FEATURED WORK
+                        .triangle-up
+                    .swiper-slide
+                        img(src="img/slide2.jpg")
+                        .left-block
+                            p Lorem ipsum
+                            p Dolor sit
+                        .triangle-up
+                    .swiper-slide
+                        img(src="img/slide3.jpg")
+                        .left-block
+                            p Amet consectetur
+                            p Adipisicing elit
+                        .triangle-up
+                    .swiper-slide
+                        img(src="img/slide4.jpg")
+                        .left-block
+                            p Nam officia
+                            p Temporibus quaerat
+                        .triangle-up
+                .swiper-pagination
             section.description
                 h1 JESUSTYPOGRAPHY WALLPAPER
                 p.
