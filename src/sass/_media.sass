@@ -3,18 +3,12 @@
 // $screen-lg: 992px +
 // $screen-xl: 1200px + 
 
-@media (max-width: 1007px)
-	body
-		border: 3px solid red
-@media (max-width: 1003px)
-	body
-		border: 3px solid blue
-@media (max-width: 998px)
-	body 
-		border: 3px solid violet
-@media (max-width: 800px)
-	body
-		border: 3px solid black
+@media (max-width: 992px)
+	main
+		section.projects
+			grid-template-columns: repeat(2, auto)
+		section.works
+			grid-template-columns: repeat(3, auto)
 // @media (max-width: 1007px)
 // 	main
 // 		section.mainImgContainer
