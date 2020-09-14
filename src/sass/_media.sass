@@ -10,6 +10,11 @@
 			grid-template-columns: repeat(2, auto)
 		section.works
 			grid-template-columns: repeat(3, auto)
+	footer 
+		.footer-container
+			.footer-right
+				p
+					margin-left: 200px
 
 //768px - 992px
 @media (max-width: 992px)
@@ -20,9 +25,16 @@
 			margin: 0 20px
 		section.projects
 			padding: 0 20px
-
+		section.works-separator
+			margin: 0 20px
+		section.works
+			padding: 0 20px
+	footer 
+		.footer-container
+			.footer-right
+				p
+					margin-left: 150px
 // @media (max-width: 940px)
-
 
 //576px - 768px
 @media (max-width: 768px)
@@ -47,12 +59,27 @@
 					&.burgerIcon
 				.menuGroup:not(:last-child)
 					margin-top: 10px
-
-
+	main
+		section.works
+			grid-template-columns: repeat(2, auto)
 @media (max-width: 576px)
 	main
 		section.projects
 			grid-template-columns: repeat(1, auto)
+		section.works
+			grid-template-columns: repeat(1, auto)
+	footer 
+		.footer-container
+			flex-direction: column
+			overflow-wrap: break-word
+			.footer-left
+				p
+					font-size: 10px
+			.footer-right
+				p
+					margin-left: 0
+					margin-top: 10px
+					font-size: 10px
 
 // @media (max-width: 1007px)
 // 	main
