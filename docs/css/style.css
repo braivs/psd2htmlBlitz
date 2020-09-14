@@ -635,4 +635,8 @@ footer {
       header nav .topnav.responsive .menuGroup:not(:last-child) {
         margin-top: 10px; } }
 
+@media (max-width: 576px) {
+  main section.projects {
+    grid-template-columns: repeat(1, auto); } }
+
 /*# sourceMappingURL=style.css.map */
