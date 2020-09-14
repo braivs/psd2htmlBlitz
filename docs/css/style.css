@@ -597,7 +597,9 @@ footer {
   header {
     padding: 0 20px; }
   main section.swiper {
-    margin: 0 20px; } }
+    margin: 0 20px; }
+  main section.projects {
+    padding: 0 20px; } }
 
 @media (max-width: 768px) {
   header {
