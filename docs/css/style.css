@@ -106,78 +106,75 @@ main {
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
-  main section.swiper {
-    max-width: 100%; }
-    main section.swiper .swiper-container {
-      position: relative;
-      border: 3px solid red; }
-      main section.swiper .swiper-container .swiper-wrapper .swiper-slide {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        position: relative; }
-        main section.swiper .swiper-container .swiper-wrapper .swiper-slide img {
-          width: 100%;
-          height: auto; }
-        main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          color: white;
-          background-color: #444444;
-          width: 217px;
-          height: 72px;
-          padding: 10px 17px; }
-          main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block p {
-            font-family: 'Bebas Neue';
-            text-transform: uppercase; }
-            main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block p:first-child {
-              color: #9a9a9a;
-              font-size: 17px; }
-            main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block p:last-child {
-              color: #ffffff;
-              font-size: 34px; }
-        main section.swiper .swiper-container .swiper-wrapper .swiper-slide .triangle-up {
-          position: absolute;
-          border: 12px solid transparent;
-          border-bottom: 12px solid #f7f7f7;
-          bottom: 0;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-              -ms-transform: translateX(-50%);
-                  transform: translateX(-50%); }
-      main section.swiper .swiper-container .swiper-pagination {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        padding-right: 15px;
-        padding-bottom: 5px; }
-        main section.swiper .swiper-container .swiper-pagination-bullet {
-          border-radius: 0;
-          opacity: 1;
-          background-color: #fff;
-          width: 23px;
-          height: 5px; }
-        main section.swiper .swiper-container .swiper-pagination-bullet-active {
-          background-color: #444444; }
-    main section.swiper .description {
-      background-color: #f7f7f7;
-      padding-top: 10px;
-      border: 3px solid blue; }
-      main section.swiper .description h1 {
-        font-size: 19px;
-        line-height: 21px;
-        padding: 0 0 10px 16px; }
-      main section.swiper .description p {
-        padding: 0 0 15px 15px;
-        font-size: 14px; }
+          flex: 1 0 auto;
+  width: 100%; }
+  main section.swiper .swiper-container {
+    position: relative; }
+    main section.swiper .swiper-container .swiper-wrapper .swiper-slide {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative; }
+      main section.swiper .swiper-container .swiper-wrapper .swiper-slide img {
+        width: 100%;
+        height: auto; }
+      main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+        background-color: #444444;
+        width: 217px;
+        height: 72px;
+        padding: 10px 17px; }
+        main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block p {
+          font-family: 'Bebas Neue';
+          text-transform: uppercase; }
+          main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block p:first-child {
+            color: #9a9a9a;
+            font-size: 17px; }
+          main section.swiper .swiper-container .swiper-wrapper .swiper-slide .left-block p:last-child {
+            color: #ffffff;
+            font-size: 34px; }
+      main section.swiper .swiper-container .swiper-wrapper .swiper-slide .triangle-up {
+        position: absolute;
+        border: 12px solid transparent;
+        border-bottom: 12px solid #f7f7f7;
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); }
+    main section.swiper .swiper-container .swiper-pagination {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-right: 15px;
+      padding-bottom: 5px; }
+      main section.swiper .swiper-container .swiper-pagination-bullet {
+        border-radius: 0;
+        opacity: 1;
+        background-color: #fff;
+        width: 23px;
+        height: 5px; }
+      main section.swiper .swiper-container .swiper-pagination-bullet-active {
+        background-color: #444444; }
+  main section.swiper .description {
+    background-color: #f7f7f7;
+    padding-top: 10px; }
+    main section.swiper .description h1 {
+      font-size: 19px;
+      line-height: 21px;
+      padding: 0 0 10px 16px; }
+    main section.swiper .description p {
+      padding: 0 0 15px 15px;
+      font-size: 14px; }
   main section.projects {
     margin: 66px 0 0 0;
     display: grid;
@@ -598,7 +595,9 @@ footer {
 
 @media (max-width: 992px) {
   header {
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  main section.swiper {
+    margin: 0 20px; } }
 
 @media (max-width: 768px) {
   header {
