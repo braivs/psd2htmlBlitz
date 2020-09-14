@@ -3,7 +3,7 @@
 // $screen-lg: 992px 
 // $screen-xl: 1200px + 
 
-//1200-992px
+//1200px - 992px
 @media (max-width: 992px)
 	main
 		section.projects
@@ -11,9 +11,42 @@
 		section.works
 			grid-template-columns: repeat(3, auto)
 
-//768px-992px
-// @media (max-width: 992px)
+//768px - 992px
+@media (max-width: 992px)
+	header
+		padding: 0 20px
 
+//576px - 768px
+@media (max-width: 768px)
+	header
+		// border: 3px solid red
+		position: relative
+		flex-direction: column
+		nav
+			// border: 3px solid orange
+			.topnav
+				// border: 3px solid violet
+				// position: relative
+				.menuGroup
+					// border: 4px solid red
+					display: none
+					.triangleDown
+						display: none
+					&.burgerIcon
+						display: flex
+						position: absolute
+						right: 0
+						top: 30px
+						// margin-top: -10px
+			.topnav.responsive
+				flex-direction: column
+				// border: 3px solid green
+				.menuGroup
+					display: flex
+					&.burgerIcon
+						// bottom: 0
+				.menuGroup:not(:last-child)
+					margin-top: 10px
 // @media (max-width: 1007px)
 // 	main
 // 		section.mainImgContainer
