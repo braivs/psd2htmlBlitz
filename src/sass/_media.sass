@@ -7,6 +7,8 @@
 
 //1200px - 992px
 @media (max-width: 992px)
+	.wrapper
+		width: 90%
 	main
 		section.projects
 			grid-template-columns: repeat(2, auto)
@@ -20,19 +22,7 @@
 
 //768px - 992px
 @media (max-width: 992px)
-	header
-		padding: 0 20px
-	main
-		section.swiper
-			margin: 0 20px
-		section.projects
-			padding: 0 20px
-		section.works-separator
-			margin: 0 20px
-		section.works
-			padding: 0 20px
 	main.about
-		padding: 0 20px
 		section.aboutContainer
 			grid-template-columns: repeat(2,auto)
 		section.aboutContainerStaff
@@ -45,12 +35,11 @@
 			.footer-right
 				p
 					margin-left: 150px
-// @media (max-width: 940px)
 
 //576px - 768px
 @media (max-width: 768px)
 	.wrapper
-		width: 500px
+		// width: 90%
 	header
 		position: relative
 		flex-direction: column
@@ -75,7 +64,6 @@
 		section.works
 			grid-template-columns: repeat(2, auto)
 	main.about
-		padding: 0 20px
 		section.aboutContainer
 			grid-template-columns: repeat(1,auto)
 		section.aboutContainerStaff
@@ -91,11 +79,30 @@
 							&:nth-of-type(1)
 								width: 85%
 								height: 85%
+	footer 
+		.footer-container
+			.footer-right
+				p
+					margin-left: 20px
 
 @media (max-width: 576px)
-	.wrapper
-		width: 80%
 	main
+		section.swiper
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.left-block
+							width: 150px
+							height: 50px
+							p
+								&:first-child
+									font-size: 15px
+								&:last-child
+									font-size: 20px
+				.swiper-pagination
+					&-bullet
+						width: 10px
+						height: 5px
 		section.projects
 			grid-template-columns: repeat(1, auto)
 		section.works
@@ -110,6 +117,9 @@
 					height: 134px*0.8
 	main.projects,main.blog,main.contact
 		section.leftBlock
+			.toggles
+				button
+					margin: 5px 5px
 			.posts
 				grid-template-columns: repeat(2, auto)
 				grid-gap: 10px
@@ -119,11 +129,16 @@
 							&:nth-of-type(1)
 								width: 60%
 								height: 60%
+					h1
+						font-size: 15px
 			.blockBlog
 				.blockBlogContainer
 					flex-direction: column
 					.blockBlogRight
 						margin: 5px 0 0 0
+			.contactForm
+				textarea
+					width: 216px
 		section.rightBlock
 			margin: 58px 0 0 10px
 				
