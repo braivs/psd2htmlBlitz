@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/lightzoom.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"/>
@@ -57,13 +58,9 @@
             <button id="development">DEVELOPMENT</button>
           </div>
           <div class="posts">
-            <div class="post web">
-              <div class="darkned"><img src="img/projects/img_1.jpg" alt=""/><img src="img/projects/bgForHover.png" alt=""/><img src="img/projects/magnify_glass.png" alt=""/></div>
+            <div class="post web"><a class="lightzoom" href="img/projects/img_1Big.jpg"><img src="img/projects/img_1.jpg"/></a>
               <h1>vallarta  brochure</h1>
-              <p>
-                Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium antium.
-                
-              </p>
+              <p>Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium antium.</p>
             </div>
             <div class="post web">
               <div class="darkned"><img src="img/projects/img_1.jpg" alt=""/><img src="img/projects/bgForHover.png" alt=""/><img src="img/projects/magnify_glass.png" alt=""/></div>
@@ -183,6 +180,7 @@
       </div>
       <script src="js/jquery-3.5.1.min.js"></script>
       <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/lightzoom.js"></script><script type="text/javascript">jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true, isWindowClickClosing: true});</script>
       <script type="text/javascript" src="js/script.js"></script>
     </footer>
   </body>

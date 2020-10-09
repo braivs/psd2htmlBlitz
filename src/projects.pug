@@ -28,7 +28,14 @@ html(lang="en")
 						button#development DEVELOPMENT
 					.posts
 						.post.web
-							+postBody("img/projects/img_1.jpg","vallarta  brochure")
+							a.lightzoom(href="img/projects/img_1Big.jpg")
+								img(src="img/projects/img_1.jpg")
+							//- <a href="img/projects/img_1Big.jpg" class="lightzoom"><img src="img/projects/img_1.jpg"/></a>	
+							//- img(src="img/projects/bgForHover.png", alt="")
+							//- img(src="img/projects/magnify_glass.png", alt="")
+							h1 vallarta  brochure
+							p.
+								Seded ut perspiciatis unde omnis iste natus error sit voluptatem accusantium antium.
 						.post.web
 							+postBody("img/projects/img_1.jpg","vallarta  brochure")
 						.post.print
