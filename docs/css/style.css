@@ -657,6 +657,8 @@ footer {
     main.projects section.leftBlock .posts .post .darkned img:nth-of-type(1), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(1), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(1) {
       width: 85%;
       height: 85%; }
+    main.projects section.leftBlock .posts .post a img:nth-of-type(1), main.blog section.leftBlock .posts .post a img:nth-of-type(1), main.contact section.leftBlock .posts .post a img:nth-of-type(1) {
+      width: 85%; }
   footer .footer-container .footer-right p {
     margin-left: 20px; } }
 
@@ -688,6 +690,8 @@ footer {
     main.projects section.leftBlock .posts .post .darkned img:nth-of-type(1), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(1), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(1) {
       width: 60%;
       height: 60%; }
+    main.projects section.leftBlock .posts .post a img:nth-of-type(1), main.blog section.leftBlock .posts .post a img:nth-of-type(1), main.contact section.leftBlock .posts .post a img:nth-of-type(1) {
+      width: 60%; }
     main.projects section.leftBlock .posts .post h1, main.blog section.leftBlock .posts .post h1, main.contact section.leftBlock .posts .post h1 {
       font-size: 15px; }
   main.projects section.leftBlock .blockBlog .blockBlogContainer, main.blog section.leftBlock .blockBlog .blockBlogContainer, main.contact section.leftBlock .blockBlog .blockBlogContainer {
