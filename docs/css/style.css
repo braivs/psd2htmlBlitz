@@ -404,32 +404,33 @@ main.projects, main.blog, main.contact {
         border: 1px solid #f8f8f8;
         max-width: 209px;
         padding-bottom: 25px; }
-        main.projects section.leftBlock .posts .post:hover .darkned::before, main.projects section.leftBlock .posts .post:hover .darkned img:nth-of-type(2), main.projects section.leftBlock .posts .post:hover .darkned img:nth-of-type(3), main.blog section.leftBlock .posts .post:hover .darkned::before, main.blog section.leftBlock .posts .post:hover .darkned img:nth-of-type(2), main.blog section.leftBlock .posts .post:hover .darkned img:nth-of-type(3), main.contact section.leftBlock .posts .post:hover .darkned::before, main.contact section.leftBlock .posts .post:hover .darkned img:nth-of-type(2), main.contact section.leftBlock .posts .post:hover .darkned img:nth-of-type(3) {
-          display: inherit; }
-        main.projects section.leftBlock .posts .post .darkned, main.blog section.leftBlock .posts .post .darkned, main.contact section.leftBlock .posts .post .darkned {
+        main.projects section.leftBlock .posts .post a, main.blog section.leftBlock .posts .post a, main.contact section.leftBlock .posts .post a {
+          display: block;
           position: relative; }
-          main.projects section.leftBlock .posts .post .darkned img:nth-of-type(1), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(1), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(1) {
-            position: relative; }
-          main.projects section.leftBlock .posts .post .darkned img:nth-of-type(2), main.projects section.leftBlock .posts .post .darkned img:nth-of-type(3), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(2), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(3), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(2), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(3) {
-            display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
-            z-index: 2; }
-        main.projects section.leftBlock .posts .post .darkned::before, main.blog section.leftBlock .posts .post .darkned::before, main.contact section.leftBlock .posts .post .darkned::before {
-          display: none;
+        main.projects section.leftBlock .posts .post a:after, main.blog section.leftBlock .posts .post a:after, main.contact section.leftBlock .posts .post a:after {
           content: '';
           position: absolute;
           top: 0;
           left: 0;
           right: 0;
           bottom: 0;
-          background-color: #000000;
-          opacity: 0.75;
+          background: rgba(0, 0, 0, 0.5);
+          opacity: 0; }
+        main.projects section.leftBlock .posts .post a:before, main.blog section.leftBlock .posts .post a:before, main.contact section.leftBlock .posts .post a:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: url("../img/magnify_glass2.png") no-repeat center;
+          opacity: 0;
           z-index: 1; }
+        main.projects section.leftBlock .posts .post a:hover:before,
+        main.projects section.leftBlock .posts .post a:hover:after, main.blog section.leftBlock .posts .post a:hover:before,
+        main.blog section.leftBlock .posts .post a:hover:after, main.contact section.leftBlock .posts .post a:hover:before,
+        main.contact section.leftBlock .posts .post a:hover:after {
+          opacity: 1; }
         main.projects section.leftBlock .posts .post h1, main.blog section.leftBlock .posts .post h1, main.contact section.leftBlock .posts .post h1 {
           padding: 6px 0 0 15px;
           font-size: 20px; }
@@ -654,11 +655,10 @@ footer {
     grid-template-columns: repeat(1, auto); }
   main.projects section.leftBlock .posts, main.blog section.leftBlock .posts, main.contact section.leftBlock .posts {
     grid-gap: 10px; }
-    main.projects section.leftBlock .posts .post .darkned img:nth-of-type(1), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(1), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(1) {
-      width: 85%;
-      height: 85%; }
-    main.projects section.leftBlock .posts .post a img:nth-of-type(1), main.blog section.leftBlock .posts .post a img:nth-of-type(1), main.contact section.leftBlock .posts .post a img:nth-of-type(1) {
+    main.projects section.leftBlock .posts .post a, main.blog section.leftBlock .posts .post a, main.contact section.leftBlock .posts .post a {
       width: 85%; }
+      main.projects section.leftBlock .posts .post a img:nth-of-type(1), main.blog section.leftBlock .posts .post a img:nth-of-type(1), main.contact section.leftBlock .posts .post a img:nth-of-type(1) {
+        width: 100%; }
   footer .footer-container .footer-right p {
     margin-left: 20px; } }
 
@@ -687,10 +687,7 @@ footer {
   main.projects section.leftBlock .posts, main.blog section.leftBlock .posts, main.contact section.leftBlock .posts {
     grid-template-columns: repeat(2, auto);
     grid-gap: 10px; }
-    main.projects section.leftBlock .posts .post .darkned img:nth-of-type(1), main.blog section.leftBlock .posts .post .darkned img:nth-of-type(1), main.contact section.leftBlock .posts .post .darkned img:nth-of-type(1) {
-      width: 60%;
-      height: 60%; }
-    main.projects section.leftBlock .posts .post a img:nth-of-type(1), main.blog section.leftBlock .posts .post a img:nth-of-type(1), main.contact section.leftBlock .posts .post a img:nth-of-type(1) {
+    main.projects section.leftBlock .posts .post a, main.blog section.leftBlock .posts .post a, main.contact section.leftBlock .posts .post a {
       width: 60%; }
     main.projects section.leftBlock .posts .post h1, main.blog section.leftBlock .posts .post h1, main.contact section.leftBlock .posts .post h1 {
       font-size: 15px; }
