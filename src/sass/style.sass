@@ -424,7 +424,11 @@ main.projects,main.blog,main.contact
 			span
 				color: #9e9e9e
 footer
+	display: flex
 	width: 100%
+	flex-direction: column
+	align-items: center
+	justify-content: center
 	p
 		color: #9b9b9b
 		span
@@ -437,17 +441,38 @@ footer
 		margin-top: 65px
 		z-index: 1
 	.footer-container
+		padding-top: 30px
+		padding-bottom: 20px
 		display: flex
-		height: 70px
+		width: 100%
 		justify-content: center
 		align-items: center
 		background: #f8f8f8
 		margin: -3px 0 0 0
-		.footer-left,.footer-right
-			p
-				font-size: 13px
-				white-space: nowrap
-		.footer-right
-			p
-				margin-left: 438px
+		.wrapper
+			display: flex
+			justify-content: space-around
+			width: 100%
+			height: 30px
+			align-items: center
+			.footer-left,.footer-right
+				p
+					font-size: 13px
+					white-space: nowrap
+			.footer-right
+				display: flex
+				// border: 1px solid red
+				align-items: center
+				p
+					&:nth-of-type(1)
+						margin-right: 5px
+					&:nth-of-type(2)
+						margin-left: 5px
+				a  
+					margin-left: 0
+					padding: 0
+					img
+						width: 25px
+						opacity: 0.3
+
 @import media
